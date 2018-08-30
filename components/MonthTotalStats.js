@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const MonthStats = props => {
+const MonthTotalStats = props => {
   const { stats, styles } = props
   const { totalRuns, avgPace, totalMiles } = stats
   const { statsContainer, statsText } = styles
@@ -14,4 +14,4 @@ const MonthStats = props => {
   )
 }
 
-export default MonthStats
+export default MonthTotalStats

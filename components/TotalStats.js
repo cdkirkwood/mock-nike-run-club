@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import StatRow from './StatRow'
+import HeaderStatRow from './HeaderStatRow'
 
 const TotalStats = props => {
   const { styles, totalStats } = props
@@ -8,11 +8,23 @@ const TotalStats = props => {
   const { container, smallStatsContainer } = styles
   return (
     <View style={container}>
-      <StatRow label="Total Miles" stat={totalMiles} styles={styles} />
+      <HeaderStatRow
+        label="Total Miles"
+        stat={totalMiles}
+        styles={styles} />
       <View style={smallStatsContainer} >
-        <StatRow label="Total Runs" stat={totalRuns} styles={styles} />
-        <StatRow label="Avg. NikeFuel" stat={avgNikeFuel} styles={styles} />
-        <StatRow label="Avg. Pace" stat={avgPace} styles={styles} />
+        <HeaderStatRow
+          label="Total Runs"
+          stat={totalRuns}
+          styles={styles} />
+        <HeaderStatRow
+          label="Avg. NikeFuel"
+          stat={avgNikeFuel}
+          styles={styles} />
+        <HeaderStatRow
+          label="Avg. Pace"
+          stat={avgPace}
+          styles={styles} />
       </View>
     </View>
   )

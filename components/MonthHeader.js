@@ -1,7 +1,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import MonthDate from './MonthDate'
-import MonthStats from './MonthStats'
+import MonthTotalStats from './MonthTotalStats'
 
 const MonthHeader = props => {
   const { styles, stats} = props
@@ -9,7 +9,7 @@ const MonthHeader = props => {
   return (
     <View style={monthAndYear}>
       <MonthDate style={statsText} />
-      <MonthStats stats={stats} styles={styles} />
+      <MonthTotalStats stats={stats} styles={styles} />
     </View>
   )
 }

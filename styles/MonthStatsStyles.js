@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   monthAndYear: {
+    width: 450,
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   statsContainer: {
-    width: 180,
+    marginRight: 80,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
@@ -38,7 +39,8 @@ const styles = StyleSheet.create({
     margin: 15
   },
   gray: {
-    color: 'gray'
+    color: 'gray',
+    fontSize: 12
   },
   bold: {
     fontWeight: 'bold'

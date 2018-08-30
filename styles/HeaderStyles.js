@@ -34,6 +34,12 @@ const styles = StyleSheet.create({
   },
   largeStats: {
     fontSize: 20,
+  },
+  achievements: {
+    marginLeft: 12
+  },
+  activity: {
+    marginRight: 12
   }
 })
 
