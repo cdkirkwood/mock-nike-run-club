@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, ScollView, Text, View } from 'react-native';
-import { TotalStats, Header, HorizontalLine } from './components'
+import { TotalStats, Header, HorizontalLine, MonthList } from './components'
 import { TotalStatsStyles } from './styles'
+import MonthStats from './components/MonthStats';
 
 export default class App extends React.Component {
   render() {
@@ -10,6 +11,7 @@ export default class App extends React.Component {
         <Header />
         <HorizontalLine />
         <TotalStats totalStats={dataStore.totalStats} styles={TotalStatsStyles} />
+        <MonthList stats={dataStore.monthStats.august} />
       </View>
     );
   }
@@ -31,14 +33,12 @@ const dataStore = {
     avgNikeFuel: 1547,
     avgPace: '8\'47""'
   },
-  monthStats: [
-    {
-      'August': {
+  monthStats: {
+      august: {
         totalMiles: 41.60,
         totalRuns: 10,
         avgPace: '8\'53""',
         runs: []
       }
     },
-  ]
 }
