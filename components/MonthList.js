@@ -3,7 +3,6 @@ import { View, FlatList } from 'react-native'
 import MonthHeader from './MonthHeader'
 import { MonthStatsStyles } from '../styles'
 import SingleRunCard from './SingleRunCard'
-import TotalStats from './TotalStats'
 
 const MonthList = (props) => {
   return (

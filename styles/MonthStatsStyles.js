@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   statsContainer: {
     width: 180,
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-between'
   },
   statsText: {
     marginRight: 20,
@@ -28,14 +28,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   cardImage: {
-    height: 100,
-    width: 100
+    height: 75,
+    width: 75,
+    margin: 15
   },
   runInfo: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
+    justifyContent: 'space-around',
+    margin: 15
+  },
+  gray: {
+    color: 'gray'
+  },
+  bold: {
+    fontWeight: 'bold'
+  },
+
 })
 
 export default styles

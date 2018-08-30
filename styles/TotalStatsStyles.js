@@ -3,15 +3,19 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+    margin: 30
   },
   centerVertically: {
     alignItems: 'center'
   },
+  spaceElements: {
+    marginBottom: 40
+  },
   largeStats: {
     fontWeight: 'bold',
-    fontSize: 50,
-    fontFamily: 'Futura-CondensedMedium'
+    fontSize: 75,
+    fontFamily: 'Futura-CondensedMedium',
   },
   smallStatsContainer: {
     flexDirection: 'row',
@@ -19,11 +23,12 @@ const styles = StyleSheet.create({
   },
   smallStats: {
     //fontWeight: 'bold',
-    fontSize: 15,
+    fontSize: 20,
     fontFamily: 'Futura-CondensedMedium'
   },
   statLabel: {
     color: 'gray',
+    
     fontFamily: 'Futura-CondensedMedium'
   }
 })
