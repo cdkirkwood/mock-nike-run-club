@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   monthAndYear: {
     height: 50,
     flexDirection: 'row',
@@ -18,6 +21,20 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     color: 'gray',
     fontFamily: 'Futura-CondensedMedium'
+  },
+  cardContainer: {
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+    flexDirection: 'row'
+  },
+  cardImage: {
+    height: 100,
+    width: 100
+  },
+  runInfo: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 })
 

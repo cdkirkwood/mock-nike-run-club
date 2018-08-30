@@ -8,7 +8,7 @@ const MonthHeader = props => {
   const {  monthAndYear, statsText } = styles
   return (
     <View style={monthAndYear}>
-      <MonthDate style={statsText}/>
+      <MonthDate style={statsText} />
       <MonthStats stats={stats} styles={styles} />
     </View>
   )
