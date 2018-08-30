@@ -1,30 +1,30 @@
 import React from 'react'
 import { View } from 'react-native'
-import HeaderStatRow from './HeaderStatRow'
+import TotalStatsRow from './TotalStatsRow'
+import { TotalStatsStyles } from '../styles'
 
 const TotalStats = props => {
-  const { styles, totalStats } = props
-  const { totalMiles, totalRuns, avgNikeFuel, avgPace } = totalStats
-  const { container, smallStatsContainer } = styles
+  const { totalMiles, totalRuns, avgNikeFuel, avgPace } = props.totalStats
+  const { container, smallStatsContainer } = TotalStatsStyles
   return (
     <View style={container}>
-      <HeaderStatRow
+      <TotalStatsRow
         label="Total Miles"
         stat={totalMiles}
-        styles={styles} />
+        styles={TotalStatsStyles} />
       <View style={smallStatsContainer} >
-        <HeaderStatRow
+        <TotalStatsRow
           label="Total Runs"
           stat={totalRuns}
-          styles={styles} />
-        <HeaderStatRow
+          styles={TotalStatsStyles} />
+        <TotalStatsRow
           label="Avg. NikeFuel"
           stat={avgNikeFuel}
-          styles={styles} />
-        <HeaderStatRow
+          styles={TotalStatsStyles} />
+        <TotalStatsRow
           label="Avg. Pace"
           stat={avgPace}
-          styles={styles} />
+          styles={TotalStatsStyles} />
       </View>
     </View>
   )

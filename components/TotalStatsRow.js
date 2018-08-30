@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const StatRow = (props) => {
+const TotalStatsRow = (props) => {
   const { styles, label, stat } = props
   const { smallStats, centerVertically, statLabel, largeStats, spaceElements } = styles
   const statStyle = label === 'Total Miles' ? largeStats : smallStats
@@ -13,4 +13,4 @@ const StatRow = (props) => {
   )
 }
 
-export default StatRow
+export default TotalStatsRow

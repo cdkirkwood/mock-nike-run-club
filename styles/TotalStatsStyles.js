@@ -22,13 +22,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly'
   },
   smallStats: {
-    //fontWeight: 'bold',
     fontSize: 20,
     fontFamily: 'Futura-CondensedMedium'
   },
   statLabel: {
     color: 'gray',
-    
     fontFamily: 'Futura-CondensedMedium'
   }
 })

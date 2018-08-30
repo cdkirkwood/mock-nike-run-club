@@ -1,34 +1,24 @@
 import React from 'react';
-import { StyleSheet, ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { TotalStats, Header, HorizontalLine, MonthList } from './components'
-import { TotalStatsStyles } from './styles'
+import { AppStyles } from './styles'
 import Run from './runClass'
 
 export default class App extends React.Component {
   render() {
     const { monthStats, totalStats } = dataStore
     return (
-      <View style={styles.container}>
+      <View style={AppStyles.container}>
         <Header />
         <HorizontalLine />
-        <ScrollView style={styles.scrollViewSize}>
-          <TotalStats totalStats={totalStats} styles={TotalStatsStyles} />
+        <ScrollView>
+          <TotalStats totalStats={totalStats} />
           <MonthList stats={monthStats} />
         </ScrollView>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff'
-  },
-  scrollViewSize: {
-    //flex: 1
-  }
-});
 
 const runs = [
   new Run('Tuesday', 'Tuesday Evening Run', 3.46, '8\'52"', '30:42', '1'),
