@@ -2,25 +2,26 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.5,
     justifyContent: 'space-evenly'
   },
-  largeStatsContainer: {
+  centerVertically: {
     alignItems: 'center'
   },
   largeStats: {
-    //flex: 1,
     fontWeight: 'bold',
-    fontSize: 30
+    fontSize: 50
   },
   smallStatsContainer: {
-    //flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-evenly'
   },
   smallStats: {
     fontWeight: 'bold',
     fontSize: 15,
+  },
+  statLabel: {
+    color: 'gray'
   }
 })
 

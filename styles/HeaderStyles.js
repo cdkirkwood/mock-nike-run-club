@@ -11,15 +11,26 @@ const styles = StyleSheet.create({
   topNav: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    //alignItems: 'stretch'
+    marginLeft: 12,
+    marginRight: 12
   },
   bottomNav: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    //alignItems: 'stretch'
+    justifyContent: 'space-around'
+  },
+  profileButton: {
+    backgroundColor: '#D3D3D3',
+    height: 25,
+    width: 25,
+    borderRadius: 25 / 2,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  profileButtonText: {
+    color: 'white'
   },
   text: {
-    fontWeight: 'bold',
+    fontSize: 20
   }
 })
 

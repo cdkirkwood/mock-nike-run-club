@@ -1,23 +1,21 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
+import StatRow from './StatRow'
 
 const TotalStats = props => {
   const { styles, totalStats } = props
   const { totalMiles, totalRuns, avgNikeFuel, avgPace } = totalStats
-  const { container, largeStats, largeStatsContainer, smallStatsContainer, smallStats } = styles
+  const { container, smallStatsContainer } = styles
   return (
     <View style={container}>
-      <View style={largeStatsContainer}>
-        <Text style={largeStats}>{totalMiles}</Text>
-      </View>
-      <View style={smallStatsContainer}>
-        <Text style={smallStats}>{totalRuns}</Text>
-        <Text style={smallStats}>{avgNikeFuel}</Text>
-        <Text style={smallStats}>{avgPace}</Text>
+      <StatRow label="Total Miles" stat={totalMiles} styles={styles} />
+      <View style={smallStatsContainer} >
+        <StatRow label="Total Runs" stat={totalRuns} styles={styles} />
+        <StatRow label="Avg. NikeFuel" stat={avgNikeFuel} styles={styles} />
+        <StatRow label="Avg. Pace" stat={avgPace} styles={styles} />
       </View>
     </View>
   )
 }
-
 
 export default TotalStats
