@@ -31,13 +31,13 @@ const dataStore = {
     totalMiles: 172.3,
     totalRuns: 47,
     avgNikeFuel: 1547,
-    avgPace: '8\'47""'
+    avgPace: '8\'47"'
   },
   monthStats: {
       august: {
         totalMiles: 41.60,
         totalRuns: 10,
-        avgPace: '8\'53""',
+        avgPace: '8\'53"',
         runs: []
       }
     },

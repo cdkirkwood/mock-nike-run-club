@@ -29,8 +29,11 @@ const styles = StyleSheet.create({
   profileButtonText: {
     color: 'white'
   },
-  text: {
-    fontSize: 20
+  font: {
+    fontFamily: 'Futura-CondensedMedium'
+  },
+  largeStats: {
+    fontSize: 20,
   }
 })
 

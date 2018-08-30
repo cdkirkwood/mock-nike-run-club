@@ -10,18 +10,21 @@ const styles = StyleSheet.create({
   },
   largeStats: {
     fontWeight: 'bold',
-    fontSize: 50
+    fontSize: 50,
+    fontFamily: 'Futura-CondensedMedium'
   },
   smallStatsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-evenly'
   },
   smallStats: {
-    fontWeight: 'bold',
+    //fontWeight: 'bold',
     fontSize: 15,
+    fontFamily: 'Futura-CondensedMedium'
   },
   statLabel: {
-    color: 'gray'
+    color: 'gray',
+    fontFamily: 'Futura-CondensedMedium'
   }
 })
 

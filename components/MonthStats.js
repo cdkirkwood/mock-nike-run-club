@@ -4,11 +4,12 @@ import { View, Text } from 'react-native'
 const MonthStats = props => {
   const { stats, styles } = props
   const { totalRuns, avgPace, totalMiles } = stats
+  const { statsContainer, statsText } = styles
   return (
-    <View style={styles}>
-      <Text>{totalRuns}</Text>
-      <Text>{avgPace}</Text>
-      <Text>{totalMiles}</Text>
+    <View style={statsContainer}>
+      <Text style={statsText}>{totalRuns} runs</Text>
+      <Text style={statsText}>{avgPace}/mi</Text>
+      <Text style={statsText}>{totalMiles}mi</Text>
     </View>
   )
 }

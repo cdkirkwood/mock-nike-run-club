@@ -5,11 +5,11 @@ import MonthStats from './MonthStats'
 
 const MonthHeader = props => {
   const { styles, stats} = props
-  const {  rowAndSpace } = styles
+  const {  monthAndYear, statsText } = styles
   return (
-    <View style={rowAndSpace}>
-      <MonthDate />
-      <MonthStats stats={stats} styles={rowAndSpace} />
+    <View style={monthAndYear}>
+      <MonthDate style={statsText}/>
+      <MonthStats stats={stats} styles={styles} />
     </View>
   )
 }
